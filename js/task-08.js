@@ -9,7 +9,8 @@ loginForm.addEventListener("submit", (event) => {
     } = event.currentTarget;
 
     if (email.value === "" || password.value === "") {
-        return console.log("Please fill in all the fields!");
+        alert('Please fill in all the fields!');
+        console.log('Please fill in all the fields!');
     }
 
     console.log(`Email: ${email.value}, Password: ${password.value}`);
