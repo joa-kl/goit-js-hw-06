@@ -3,12 +3,12 @@ let counterValue = 0;
 
 const buttonDecrement = document.querySelector('button[data-action="decrement"]');
 buttonDecrement.addEventListener("click", () => {
-    startValue.innerHTML = counterValue;
     counterValue -= 1;
+    startValue.innerHTML = counterValue;
 });
 
 const buttonIncrement = document.querySelector('button[data-action="increment"]');
 buttonIncrement.addEventListener("click", () => {
-    startValue.innerHTML = counterValue;
     counterValue += 1;
+    startValue.innerHTML = counterValue;
 });
